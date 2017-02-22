@@ -13,6 +13,11 @@
 		A1ABD0A11E5C86F6004C6665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ABD09F1E5C86F6004C6665 /* LaunchScreen.storyboard */; };
 		A1ABD0AC1E5C86F7004C6665 /* QQZoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABD0AB1E5C86F7004C6665 /* QQZoneTests.swift */; };
 		A1ABD0B71E5C86F7004C6665 /* QQZoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABD0B61E5C86F7004C6665 /* QQZoneUITests.swift */; };
+		A1ABD0D01E5D51F2004C6665 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABD0CF1E5D51F2004C6665 /* LoginViewController.swift */; };
+		A1ABD0D71E5D52B7004C6665 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ABD0D31E5D52B7004C6665 /* Default-Landscape.png */; };
+		A1ABD0D81E5D52B7004C6665 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ABD0D41E5D52B7004C6665 /* Default-Landscape@2x.png */; };
+		A1ABD0D91E5D52B7004C6665 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ABD0D51E5D52B7004C6665 /* Default-Portrait.png */; };
+		A1ABD0DA1E5D52B7004C6665 /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ABD0D61E5D52B7004C6665 /* Default-Portrait@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		A1ABD0B21E5C86F7004C6665 /* QQZoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QQZoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1ABD0B61E5C86F7004C6665 /* QQZoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQZoneUITests.swift; sourceTree = "<group>"; };
 		A1ABD0B81E5C86F7004C6665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1ABD0CF1E5D51F2004C6665 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A1ABD0D31E5D52B7004C6665 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		A1ABD0D41E5D52B7004C6665 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		A1ABD0D51E5D52B7004C6665 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		A1ABD0D61E5D52B7004C6665 /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +167,7 @@
 		A1ABD0C81E5D4D12004C6665 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A1ABD0CF1E5D51F2004C6665 /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -195,6 +206,8 @@
 		A1ABD0CD1E5D4D12004C6665 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				A1ABD0D11E5D521B004C6665 /* Category */,
+				A1ABD0D21E5D521B004C6665 /* Tool */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -203,11 +216,29 @@
 			isa = PBXGroup;
 			children = (
 				A1ABD09A1E5C86F6004C6665 /* Main.storyboard */,
+				A1ABD0D31E5D52B7004C6665 /* Default-Landscape.png */,
+				A1ABD0D41E5D52B7004C6665 /* Default-Landscape@2x.png */,
+				A1ABD0D51E5D52B7004C6665 /* Default-Portrait.png */,
+				A1ABD0D61E5D52B7004C6665 /* Default-Portrait@2x.png */,
 				A1ABD09D1E5C86F6004C6665 /* Assets.xcassets */,
 				A1ABD09F1E5C86F6004C6665 /* LaunchScreen.storyboard */,
 				A1ABD0A21E5C86F6004C6665 /* Info.plist */,
 			);
 			name = resource;
+			sourceTree = "<group>";
+		};
+		A1ABD0D11E5D521B004C6665 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A1ABD0D21E5D521B004C6665 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,8 +351,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1ABD0DA1E5D52B7004C6665 /* Default-Portrait@2x.png in Resources */,
+				A1ABD0D91E5D52B7004C6665 /* Default-Portrait.png in Resources */,
 				A1ABD0A11E5C86F6004C6665 /* LaunchScreen.storyboard in Resources */,
+				A1ABD0D71E5D52B7004C6665 /* Default-Landscape.png in Resources */,
 				A1ABD09E1E5C86F6004C6665 /* Assets.xcassets in Resources */,
+				A1ABD0D81E5D52B7004C6665 /* Default-Landscape@2x.png in Resources */,
 				A1ABD09C1E5C86F6004C6665 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1ABD0D01E5D51F2004C6665 /* LoginViewController.swift in Sources */,
 				A1ABD0971E5C86F6004C6665 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,6 +537,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MX22E64P3H;
 				INFOPLIST_FILE = QQZone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qixin.cn.QQZone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +551,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MX22E64P3H;
 				INFOPLIST_FILE = QQZone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qixin.cn.QQZone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
