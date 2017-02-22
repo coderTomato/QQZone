@@ -55,6 +55,9 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
                                         <state key="normal" title="记住密码" image="login_checkbox_normal"/>
                                         <state key="selected" image="login_checkbox_checked"/>
+                                        <connections>
+                                            <action selector="rememberPwd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HYf-na-YuD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49R-ir-5Ux" userLabel="auto">
                                         <rect key="frame" x="279" y="164" width="91" height="20"/>
@@ -66,6 +69,9 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
                                         <state key="normal" title="自动登录" image="login_checkbox_normal"/>
                                         <state key="selected" image="login_checkbox_checked"/>
+                                        <connections>
+                                            <action selector="autoLogin" destination="BYZ-38-t0r" eventType="touchUpInside" id="q4h-Uf-D6g"/>
+                                        </connections>
                                     </button>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="cgk-1e-gyT">
                                         <rect key="frame" x="225" y="123" width="20" height="20"/>

@@ -31,10 +31,20 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func rememberPwd(_ sender: Any) {
+        rememberPwdBtn.isSelected = !rememberPwdBtn.isSelected;
+        if !rememberPwdBtn.isSelected{
+            autoLoginBtn.isSelected = false;
+        }
     }
+    
+    @IBAction func autoLogin() {
+        autoLoginBtn.isSelected = !autoLoginBtn.isSelected;
+        if autoLoginBtn.isSelected{
+            rememberPwdBtn.isSelected = true;
+        }
+    }
+    
 
 }
 

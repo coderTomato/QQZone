@@ -18,6 +18,16 @@
 		A1ABD0D81E5D52B7004C6665 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ABD0D41E5D52B7004C6665 /* Default-Landscape@2x.png */; };
 		A1ABD0D91E5D52B7004C6665 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ABD0D51E5D52B7004C6665 /* Default-Portrait.png */; };
 		A1ABD0DA1E5D52B7004C6665 /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ABD0D61E5D52B7004C6665 /* Default-Portrait@2x.png */; };
+		A1ABD0DC1E5E5B25004C6665 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABD0DB1E5E5B25004C6665 /* UIView+Extension.swift */; };
+		A1ABD0DE1E5E5B6A004C6665 /* QQLoginTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABD0DD1E5E5B6A004C6665 /* QQLoginTool.swift */; };
+		A1ABD0E01E5E5B80004C6665 /* QQMessageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABD0DF1E5E5B80004C6665 /* QQMessageTool.swift */; };
+		A1ABD0E21E5E5B91004C6665 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABD0E11E5E5B91004C6665 /* Common.swift */; };
+		A1ABD0E41E5E5BCA004C6665 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABD0E31E5E5BCA004C6665 /* HomeViewController.swift */; };
+		A1ABD0E61E5E5BEC004C6665 /* QQDock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABD0E51E5E5BEC004C6665 /* QQDock.swift */; };
+		A1ABD0E81E5E5BFE004C6665 /* QQTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABD0E71E5E5BFE004C6665 /* QQTabbar.swift */; };
+		A1ABD0EA1E5E5C11004C6665 /* QQMenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABD0E91E5E5C11004C6665 /* QQMenue.swift */; };
+		A1ABD0EC1E5E5C2B004C6665 /* QQMenueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABD0EB1E5E5C2B004C6665 /* QQMenueButton.swift */; };
+		A1ABD0EE1E5E5C3B004C6665 /* QQHeaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABD0ED1E5E5C3B004C6665 /* QQHeaderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +65,16 @@
 		A1ABD0D41E5D52B7004C6665 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
 		A1ABD0D51E5D52B7004C6665 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
 		A1ABD0D61E5D52B7004C6665 /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x.png"; sourceTree = "<group>"; };
+		A1ABD0DB1E5E5B25004C6665 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A1ABD0DD1E5E5B6A004C6665 /* QQLoginTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQLoginTool.swift; sourceTree = "<group>"; };
+		A1ABD0DF1E5E5B80004C6665 /* QQMessageTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMessageTool.swift; sourceTree = "<group>"; };
+		A1ABD0E11E5E5B91004C6665 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		A1ABD0E31E5E5BCA004C6665 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A1ABD0E51E5E5BEC004C6665 /* QQDock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQDock.swift; sourceTree = "<group>"; };
+		A1ABD0E71E5E5BFE004C6665 /* QQTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQTabbar.swift; sourceTree = "<group>"; };
+		A1ABD0E91E5E5C11004C6665 /* QQMenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMenue.swift; sourceTree = "<group>"; };
+		A1ABD0EB1E5E5C2B004C6665 /* QQMenueButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMenueButton.swift; sourceTree = "<group>"; };
+		A1ABD0ED1E5E5C3B004C6665 /* QQHeaderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQHeaderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +180,11 @@
 		A1ABD0C71E5D4D12004C6665 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A1ABD0E51E5E5BEC004C6665 /* QQDock.swift */,
+				A1ABD0E71E5E5BFE004C6665 /* QQTabbar.swift */,
+				A1ABD0E91E5E5C11004C6665 /* QQMenue.swift */,
+				A1ABD0EB1E5E5C2B004C6665 /* QQMenueButton.swift */,
+				A1ABD0ED1E5E5C3B004C6665 /* QQHeaderButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				A1ABD0CF1E5D51F2004C6665 /* LoginViewController.swift */,
+				A1ABD0E31E5E5BCA004C6665 /* HomeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -230,6 +256,7 @@
 		A1ABD0D11E5D521B004C6665 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				A1ABD0DB1E5E5B25004C6665 /* UIView+Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -237,6 +264,9 @@
 		A1ABD0D21E5D521B004C6665 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				A1ABD0DD1E5E5B6A004C6665 /* QQLoginTool.swift */,
+				A1ABD0DF1E5E5B80004C6665 /* QQMessageTool.swift */,
+				A1ABD0E11E5E5B91004C6665 /* Common.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -382,7 +412,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1ABD0E01E5E5B80004C6665 /* QQMessageTool.swift in Sources */,
+				A1ABD0DC1E5E5B25004C6665 /* UIView+Extension.swift in Sources */,
+				A1ABD0EC1E5E5C2B004C6665 /* QQMenueButton.swift in Sources */,
+				A1ABD0EA1E5E5C11004C6665 /* QQMenue.swift in Sources */,
+				A1ABD0E81E5E5BFE004C6665 /* QQTabbar.swift in Sources */,
+				A1ABD0E61E5E5BEC004C6665 /* QQDock.swift in Sources */,
+				A1ABD0DE1E5E5B6A004C6665 /* QQLoginTool.swift in Sources */,
 				A1ABD0D01E5D51F2004C6665 /* LoginViewController.swift in Sources */,
+				A1ABD0E21E5E5B91004C6665 /* Common.swift in Sources */,
+				A1ABD0E41E5E5BCA004C6665 /* HomeViewController.swift in Sources */,
+				A1ABD0EE1E5E5C3B004C6665 /* QQHeaderButton.swift in Sources */,
 				A1ABD0971E5C86F6004C6665 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
