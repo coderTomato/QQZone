@@ -40,9 +40,9 @@ class QQDock: UIView {
     // 创建头部控件
     lazy var headerIcon : QQHeaderButton = {
         let btn = QQHeaderButton();
-        
-        btn.setImage(UIImage(named: "tab_bar_pic_wall_icon"), for: .normal);
-        
+        btn.setImage(UIImage(named: "icon.jpg"), for: .normal);
+        btn.setTitle("tomato", for: .normal);
+        self.addSubview(btn);
         return btn;
     }();
     
@@ -52,5 +52,10 @@ class QQDock: UIView {
         bottomView.frame = CGRect(x: 0, y: self.height - dockTabbarHeight, width: self.width, height: dockTabbarHeight);
         
         middleView.frame = CGRect(x: 0, y: self.height - dockTabbarHeight - dockMenuHeight, width: self.width, height: dockMenuHeight);
+        let width : CGFloat = dockHeaderWidth;
+        let height : CGFloat = dockHeaderHeight;
+        let x : CGFloat = (self.width - width) * 0.5;
+        let y : CGFloat = 150;
+        headerIcon.frame = CGRect(x: x, y: y, width: width, height: height);
     }
 }

@@ -27,3 +27,13 @@ var dockTabbarHeight : CGFloat{
 var dockMenuHeight : CGFloat{
     return 600;
 }
+
+// dock headerIcon 高度
+var dockHeaderHeight : CGFloat {
+    return isLandScape() ? 130 : 60;
+}
+
+// dock headerIcon 宽度
+var dockHeaderWidth : CGFloat {
+    return isLandScape() ? 100 : 60;
+}
