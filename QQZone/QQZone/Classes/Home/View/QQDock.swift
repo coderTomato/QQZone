@@ -32,7 +32,7 @@ class QQDock: UIView {
     // 创建中间控件占位
     lazy var middleView : QQMenue = {
         let middleView = QQMenue();
-        middleView.backgroundColor = UIColor.orange;
+        middleView.backgroundColor = UIColor.clear;
         self.addSubview(middleView);
         return middleView;
     }();

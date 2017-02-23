@@ -10,12 +10,24 @@ import UIKit
 
 class QQMenueButton: UIButton {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame);
+        imageView?.contentMode = .center;
     }
-    */
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews();
+        if isLandScape(){
+            imageView?.frame = CGRect(x: 0, y: 0, width: self.width * 0.3, height: self.height);
+            titleLabel?.frame = CGRect(x: (imageView?.rightX)!, y: 0, width: self.width - (imageView?.width)!, height: self.height);
+        }else {
+            imageView?.frame = self.bounds;
+            titleLabel?.frame = CGRect.zero;
+        }
+    }
 
 }
