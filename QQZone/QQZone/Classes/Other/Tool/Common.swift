@@ -8,6 +8,22 @@
 
 import UIKit
 
-class Common: NSObject {
+func isLandScape() -> Bool {
+    let bounds = UIScreen.main.bounds;
+    return bounds.size.width > bounds.size.height;
+}
 
+// dock宽度
+var dockWidth : CGFloat {
+    return isLandScape() ? 210 : 70;
+}
+
+// dock tabbar 高度
+var dockTabbarHeight : CGFloat{
+    return isLandScape() ? 70 : 210;
+}
+
+// dock menue 高度
+var dockMenuHeight : CGFloat{
+    return 600;
 }

@@ -10,26 +10,61 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    // 左侧视图控件占位
+    lazy var leftView : QQDock = {
+        let leftView = QQDock();
+        leftView.delegate = self;
+        leftView.backgroundColor = UIColor.clear;
+        self.view.addSubview(leftView);
+        return leftView;
+    }();
+    
+    // 右侧视图控件占位
+    lazy var rightView : UIView = {
+        let rightView = UIView();
+        rightView.backgroundColor = UIColor.brown;
+        self.view.addSubview(rightView);
+        return rightView;
+    }();
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        setUpInit();
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension HomeViewController{
+    
+    func setUpInit(){
+        view.backgroundColor = UIColor(red: 55 / 255.0, green: 55 / 255.0, blue: 55 / 255.0, alpha: 1);
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // 调整状态栏
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent;
     }
-    */
-
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews();
+        //左侧视图frame
+        leftView.frame = CGRect(x: 0, y: 0, width: dockWidth, height: view.height);
+        //右侧视图frame
+        rightView.frame = CGRect(x: dockWidth, y: 0, width: self.view.width - dockWidth, height: view.height);
+    }
+    
 }
+
+extension HomeViewController : QQDockDelegate{
+    
+    func qqduckDidClicked() {
+        
+    }
+    
+    func qqTabbarDidSelect(type: QQTabbarType) {
+        if type == .Shuoshuo {
+            print(type.rawValue);
+        }
+    }
+}
+
