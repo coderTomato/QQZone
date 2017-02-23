@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A10BB2681E5F22860030BE67 /* ShuoshuoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10BB2671E5F22860030BE67 /* ShuoshuoViewController.swift */; };
 		A1ABD0971E5C86F6004C6665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABD0961E5C86F6004C6665 /* AppDelegate.swift */; };
 		A1ABD09C1E5C86F6004C6665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ABD09A1E5C86F6004C6665 /* Main.storyboard */; };
 		A1ABD09E1E5C86F6004C6665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1ABD09D1E5C86F6004C6665 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A10BB2671E5F22860030BE67 /* ShuoshuoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuoshuoViewController.swift; sourceTree = "<group>"; };
 		A1ABD0931E5C86F6004C6665 /* QQZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1ABD0961E5C86F6004C6665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1ABD09B1E5C86F6004C6665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			children = (
 				A1ABD0CF1E5D51F2004C6665 /* LoginViewController.swift */,
 				A1ABD0E31E5E5BCA004C6665 /* HomeViewController.swift */,
+				A10BB2671E5F22860030BE67 /* ShuoshuoViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				A1ABD0DE1E5E5B6A004C6665 /* QQLoginTool.swift in Sources */,
 				A1ABD0D01E5D51F2004C6665 /* LoginViewController.swift in Sources */,
 				A1ABD0E21E5E5B91004C6665 /* Common.swift in Sources */,
+				A10BB2681E5F22860030BE67 /* ShuoshuoViewController.swift in Sources */,
 				A1ABD0E41E5E5BCA004C6665 /* HomeViewController.swift in Sources */,
 				A1ABD0EE1E5E5C3B004C6665 /* QQHeaderButton.swift in Sources */,
 				A1ABD0971E5C86F6004C6665 /* AppDelegate.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol QQDockDelegate:QQTabbarDelegate {
+protocol QQDockDelegate:QQTabbarDelegate,QQMenueDelegate {
     func qqduckDidClicked() -> ();
 }
 
@@ -17,6 +17,7 @@ class QQDock: UIView {
     var delegate : QQDockDelegate?{
         didSet{
             bottomView.delegate = delegate;
+            middleView.delegate = delegate;
         }
     }
 
@@ -42,6 +43,7 @@ class QQDock: UIView {
         let btn = QQHeaderButton();
         btn.setImage(UIImage(named: "icon.jpg"), for: .normal);
         btn.setTitle("tomato", for: .normal);
+        btn.addTarget(self, action: #selector(btnClick), for: .touchDown);
         self.addSubview(btn);
         return btn;
     }();
@@ -57,5 +59,10 @@ class QQDock: UIView {
         let x : CGFloat = (self.width - width) * 0.5;
         let y : CGFloat = 150;
         headerIcon.frame = CGRect(x: x, y: y, width: width, height: height);
+    }
+    
+    func btnClick(btn:UIButton) {
+        delegate?.qqduckDidClicked();
+        middleView.clearAll();
     }
 }

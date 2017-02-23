@@ -29,8 +29,8 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUpInit();
+        setupChildVCs();
     }
 }
 
@@ -53,18 +53,50 @@ extension HomeViewController{
         rightView.frame = CGRect(x: dockWidth, y: 0, width: self.view.width - dockWidth, height: view.height);
     }
     
+    func setupChildVCs() {
+        addChildVc(vc: UIViewController(), title: "电子相框");
+        addChildVc(vc: UIViewController(), title: "更多");
+        addChildVc(vc: UIViewController(), title: "全部动态");
+        addChildVc(vc: UIViewController(), title: "好友");
+        addChildVc(vc: UIViewController(), title: "与我相关");
+        addChildVc(vc: UIViewController(), title: "照片墙");
+        addChildVc(vc: UIViewController(), title: "个人中心");
+    }
+    
+    func addChildVc(vc: UIViewController, title:String) {
+        vc.title = title;
+        let nav = UINavigationController(rootViewController: vc);
+        addChildViewController(nav);
+    }
+    
+    func addChildVcView(selectedIndex: Int) {
+        let subView = rightView.subviews.first;
+        subView?.removeFromSuperview();
+        
+        let childVc = self.childViewControllers[selectedIndex];
+        childVc.view.frame = rightView.bounds;
+        rightView.addSubview(childVc.view);
+    }
 }
 
 extension HomeViewController : QQDockDelegate{
     
     func qqduckDidClicked() {
-        
+        addChildVcView(selectedIndex: self.childViewControllers.count - 1);
     }
     
     func qqTabbarDidSelect(type: QQTabbarType) {
         if type == .Shuoshuo {
-            print(type.rawValue);
+            let shuoVc = ShuoshuoViewController();
+            let nav = UINavigationController(rootViewController: shuoVc);
+            nav.modalPresentationStyle = .formSheet;
+            nav.modalTransitionStyle = .flipHorizontal;
+            present(nav, animated: true, completion: nil);
         }
+    }
+    
+    func qqMenuDidSelected(index: Int) {
+        addChildVcView(selectedIndex: index);
     }
 }
 

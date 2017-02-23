@@ -8,8 +8,15 @@
 
 import UIKit
 
+protocol QQMenueDelegate {
+    func qqMenuDidSelected(index:Int);
+}
+
 class QQMenue: UIView {
 
+    var delegate : QQMenueDelegate?
+    var selectedBtn : UIButton?;
+    
     override init(frame: CGRect) {
         super.init(frame: frame);
         // 添加子控件
@@ -31,7 +38,7 @@ class QQMenue: UIView {
     func addBtn(imageName:String, title:String){
         let btn = QQMenueButton();
         btn.setImage(UIImage(named:imageName), for: .normal);
-        btn.setBackgroundImage(UIImage(named:"tabbar_separate_selected_bg"), for: .normal);
+        btn.setBackgroundImage(UIImage(named:"tabbar_separate_selected_bg"), for: .selected);
         btn.setTitle(title, for: .normal);
         btn.addTarget(self, action: #selector(btnClick), for:.touchDown);
         btn.tag = self.subviews.count;
@@ -39,7 +46,14 @@ class QQMenue: UIView {
     }
     
     func btnClick(btn:UIButton){
-        print(btn);
+        selectedBtn?.isSelected = false;
+        btn.isSelected = true;
+        selectedBtn = btn;
+        delegate?.qqMenuDidSelected(index: btn.tag);
+    }
+    
+    func clearAll() {
+        selectedBtn?.isSelected = false;
     }
     
     override func layoutSubviews() {
