@@ -35,5 +35,10 @@ var dockHeaderHeight : CGFloat {
 
 // dock headerIcon 宽度
 var dockHeaderWidth : CGFloat {
-    return isLandScape() ? 100 : 60;
+    return isLandScape() ? 90 : 60;
+}
+
+// dock headerIcon 宽度
+var dockHeaderTop : CGFloat {
+    return isLandScape() ? 40 : 100;
 }

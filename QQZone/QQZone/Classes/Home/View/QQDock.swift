@@ -57,7 +57,7 @@ class QQDock: UIView {
         let width : CGFloat = dockHeaderWidth;
         let height : CGFloat = dockHeaderHeight;
         let x : CGFloat = (self.width - width) * 0.5;
-        let y : CGFloat = 150;
+        let y : CGFloat = dockHeaderTop;
         headerIcon.frame = CGRect(x: x, y: y, width: width, height: height);
     }
     

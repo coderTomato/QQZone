@@ -23,9 +23,9 @@ class QQHeaderButton: UIButton {
     override func layoutSubviews() {
         super.layoutSubviews();
         if isLandScape(){
-            let imageViewH = self.height * 0.8;
+            let imageViewH = self.height * 0.6;
             imageView?.frame = CGRect(x: 0, y: 0, width: self.width, height:imageViewH);
-            titleLabel?.frame = CGRect(x: 0, y: (imageView?.bottomY)!
+            titleLabel?.frame = CGRect(x: 0, y: (imageView?.bottomY)! - 15
                 , width: self.width, height: self.height - imageViewH);
         }else {
             imageView?.frame = self.bounds;
